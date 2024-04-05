@@ -1,0 +1,43 @@
+* {
+    background-color: #cccccc;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 32px;
+    font-style: italic;
+    text-align: center;
+    color: blue;    
+}
+
+.Subtitulo {
+    font-size: 24px;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+.Parrafo {
+    font-size: 20px;
+    color: violet;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+
+}
+
+li {
+    list-style: none;
+    color: red;
+}
+
+#Formulario {
+    color: firebrick;
+    text-decoration-line: underline;
+
+    
+}
+
+#Formulario:hover {
+    color: blue;
+}
+
+
