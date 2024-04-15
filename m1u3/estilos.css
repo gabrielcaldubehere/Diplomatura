@@ -1,5 +1,5 @@
 * {
-    background-color: #cccccc;
+    background-color: lightgray;
     font-size: 1rem;
 }
 
@@ -20,6 +20,8 @@ h1 {
     font-size: 20px;
     color: violet;
     font-family: Arial, Helvetica, sans-serif ;
+    background: linear-gradient(to bottom, rgb(176,212,227) 0%,rgb(136,186,207) 100%);
+
     
 
 }
@@ -40,4 +42,11 @@ li {
     color: blue;
 }
 
+#Imagen {
+    box-shadow: 1px 1px 0px black;
 
+}
+
+.exclamacion {
+    color: blueviolet;
+}
