@@ -1,0 +1,36 @@
+.contenedor {
+    width: 90%;
+    background-color: #999999;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   
+    
+    
+}
+
+.item {
+    border: 2px solid black;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rojo{
+    background-color: red;
+
+}
+
+#azul{
+    background-color: blue;
+}
+
+#verde{
+    background-color: green;
+}
