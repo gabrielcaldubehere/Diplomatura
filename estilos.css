@@ -1,0 +1,9 @@
+.carousel {
+    max-height: 300px;
+}
+
+p {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
