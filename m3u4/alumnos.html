@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Alumnos</title>
+  </head>
+  <body>
+    <script>
+      var alumnos = [
+        { nombre: "Juan Gomez", nota: 7 },
+        { nombre: "Pedro Rodriguez", nota: 4 },
+        { nombre: "Roxana García", nota: 8 },
+        { nombre: "Luciano Lopez", nota: 5 },
+        { nombre: "Fernanda Gimenez", nota: 6 },
+        { nombre: "Florencia Martinez", nota: 10 },
+        { nombre: "Raul Sanchez", nota: 7 },
+        { nombre: "Sandra Figueroa", nota: 8 },
+      ];
+
+      const alumnosAprobados = alumnos.filter((alumnos) => alumnos.nota >= 7);
+      const alumnosDesaprobados = alumnos.filter((alumnos) => alumnos.nota < 6);
+
+      console.log(alumnosAprobados);
+      console.log(alumnosDesaprobados);
+    </script>
+  </body>
+</html>
