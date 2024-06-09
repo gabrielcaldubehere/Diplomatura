@@ -1,0 +1,39 @@
+.nav {
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ulnav {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 3px;
+
+}
+
+
+.clasificacion:hover .productos {
+    position: absolute;
+    display: block;
+    align-items: center;
+    list-style: none;
+    text-align: justify;
+    background-color: yellow;
+    padding: 10px;
+    padding-left: 0px;
+    gap: 3px;
+
+
+
+}
+
+.productos {
+    list-style: none;
+    display: none;
+}
