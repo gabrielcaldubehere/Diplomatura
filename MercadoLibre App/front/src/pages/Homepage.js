@@ -6,7 +6,7 @@ import img1 from "../assets/images/diadelpadrebanner.png";
 import img2 from "../assets/images/promo.png";
 import img3 from "../assets/images/banner2.jpg";
 
-const Homepage = (props) => {
+const Home = (props) => {
   var settings = {
     dots: true,
     infinite: true,
@@ -35,4 +35,4 @@ const Homepage = (props) => {
   );
 };
 
-export default Homepage;
+export default Home;

@@ -1,0 +1,60 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+.prod {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.cajas {
+    width: 300px;
+    display: inline-block;
+    align-content: space-evenly;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 3px;
+}
+
+.producto {
+    width: 150px;
+}
+
+#prod2 {
+    width: 200px;
+}
+
+#prod3 {
+    width: 180px;
+}
+
+#prod4 {
+    width: 175px;
+}
+
+.descripcion {
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+
+#cantidad {
+    width: 50%;
+    text-align: center;
+    margin: 15px;
+}
+
+#agregar {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}

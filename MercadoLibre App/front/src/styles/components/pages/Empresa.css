@@ -1,0 +1,17 @@
+h2 {
+    font-size: 2rem;
+    color: blue;
+}
+
+#parrafo {
+    font-size: 1em;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.imgemp {
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+}

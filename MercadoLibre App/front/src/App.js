@@ -8,7 +8,9 @@ import Header from "./components/Header.js";
 import Nav from "./components/Nav.js";
 import Footer from "./components/Footer.js";
 
-import Homepage from "./pages/Homepage.js";
+import Home from "../src/pages/Homepage.js";
+import Productos from "../src/pages/Productos";
+import Empresa from "../src/pages/Empresa.js";
 
 function App() {
   return (
@@ -17,7 +19,11 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Productos" element={<Productos />} />
+          <Route path="/Empresa" element={<Empresa />} />
+          <Route />
+
         </Routes>
       </BrowserRouter>
 
