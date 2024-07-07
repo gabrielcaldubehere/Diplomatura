@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+{{#if comida}}
+<p>La comida es {{alimento}} <a href="/salir">Salir</a></p>
+{{/if}}
+
+{{#unless comida}}
+<p>Ingresar comida</p>
+<form action="/ingresar" method="post">
+    <input type="text" name="comida">
+    <button>Ingresar</button>
+</form>
+{{/unless}}
