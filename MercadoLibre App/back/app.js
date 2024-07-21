@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config(); /* conectar dotenv */
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const loginRouter = require('./routes/admin/login'); //login
@@ -22,7 +24,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/admin/login', loginRouter) ; //login use
+app.use('/admin/login', loginRouter); //login use
+
+var pool = require('./models/bd');
+
+//select pool
+pool.query('select * from mercadolibre').then(function (resultado) {
+  console.log(resultado)
+})
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
