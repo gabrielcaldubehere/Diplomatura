@@ -1,8 +1,51 @@
-body {
+.body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.header {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 110px;
+  width: 100%;
+}
+
+#mercadolibreimg {
+  width: 100px;
+  height: 80px;
+  padding-top: 20px;
+}
+
+.h1 {
+  color: blue;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.footer {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+
+}
+
+p {
+  font-size: 1.2rem;
+
+
 }

@@ -1,1 +1,18 @@
-<h1>Hola soy la pagina login</h1>
+<h2>Loguearse</h2>
+
+<div>
+  <form action="/views/admin/login.hbs" method="post">
+    <input type="text" id="inputUser" placeholder="usuario" name="usuario" />
+    <input
+      type="text"
+      id="inputPassword"
+      placeholder="password"
+      name="password"
+    />
+    <button type="submit" id="botonIngreso">Ingresar</button>
+  </form>
+  {{#if error}}
+    <p>Usuario y/o contrseña incorrectos</p>
+  {{/if}}
+
+</div>

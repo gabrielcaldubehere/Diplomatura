@@ -5,10 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config(); /* conectar dotenv */
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const loginRouter = require('./routes/admin/login'); //login
+var adminRouter = require('./routes/admin/administrador') // administrador
 
 var app = express();
 
@@ -22,16 +24,32 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//palabra secreta
+app.use(session({
+  secret: 'tanjiro',
+  cookie: { maxAge: null },
+  resave: false,
+  saveUninitialized: true
+}))
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}//cierre secured
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter); //login use
+app.use('/admin/administrador', secured, adminRouter) //admin use
 
-var pool = require('./models/bd');
-
-//select pool
-pool.query('select * from mercadolibre').then(function (resultado) {
-  console.log(resultado)
-})
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
