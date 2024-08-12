@@ -10,6 +10,17 @@ router.get('/', function (req, res, next) {
         });
 });
 
+/*Destruye sesion */
+router.get('/logout', function (req, res, next) {
+    req.session.destroy(); //destruye sesion
+    res.render('admin/login', //carpeta views/admin/login.hbs
+        {
+            layout: 'admin/layout' //carpeta views/admin/layout.hbs
+        });
+});
+
+
+
 router.post('/', async (req, res, next) => {
     try {
         var usuario = req.body.usuario; /*capturando el usuario*/

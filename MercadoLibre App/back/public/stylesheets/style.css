@@ -1,18 +1,21 @@
-.body {
-  padding: 50px;
+body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+
 }
 
-.header {
+header {
   background-color: yellow;
-  display: flex;
-  justify-content: space-evenly;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
   padding-left: 15px;
   padding-right: 15px;
   height: 110px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #mercadolibreimg {
@@ -21,31 +24,64 @@
   padding-top: 20px;
 }
 
-.h1 {
+h1 {
   color: blue;
   font-family: "Nunito Sans", sans-serif;
   font-size: 3rem;
   width: 100%;
-  display: flex;
+  text-align: center;
+
+}
+
+h2 {
+  text-align: center;
+  color: lightskyblue;
+}
+
+.container {
+  display: grid;
   justify-content: center;
+}
+
+#botonIngreso {
+  background-color: lightblue;
+
+}
+
+.container2 {
+  margin-top: 50px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+  font-size: 1em;
+  gap: 10;
+
+
+
+}
+
+.logout {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+
 }
 
 
-
-
-.footer {
+footer {
   background-color: yellow;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-top: 10px;
   width: 100%;
 
 }
 
-p {
+p .footer {
   font-size: 1.2rem;
-
 
 }

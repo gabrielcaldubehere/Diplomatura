@@ -1,7 +1,7 @@
-<h2>Loguearse</h2>
+<h2>Inicio de sesion</h2>
 
-<div>
-  <form action="/views/admin/login.hbs" method="post">
+<div class="container">
+  <form action="/admin/login" method="post">
     <input type="text" id="inputUser" placeholder="usuario" name="usuario" />
     <input
       type="text"
@@ -9,10 +9,14 @@
       placeholder="password"
       name="password"
     />
-    <button type="submit" id="botonIngreso">Ingresar</button>
+    <button
+      class="btn btn-primary"
+      type="submit"
+      id="botonIngreso"
+    >Ingresar</button>
   </form>
   {{#if error}}
-    <p>Usuario y/o contrseña incorrectos</p>
+    <p>Usuario y/o contraseña incorrectos</p>
   {{/if}}
 
 </div>
