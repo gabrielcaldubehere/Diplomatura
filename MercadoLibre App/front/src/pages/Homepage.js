@@ -8,13 +8,13 @@ import img3 from "../assets/images/banner2.jpg";
 
 const Home = (props) => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplayspeed: 2000,
+    autoplayspeed: 500,
     cssEase: "linear",
     adaptativeHeigth: true,
   };

@@ -32,6 +32,8 @@ app.use(session({
   saveUninitialized: true
 }))
 
+
+//Rutas Privadas de Seguridad
 secured = async (req, res, next) => {
   try {
     console.log(req.session.id_usuario);

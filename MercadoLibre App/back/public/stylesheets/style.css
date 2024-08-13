@@ -2,6 +2,9 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -30,6 +33,7 @@ h1 {
   font-size: 3rem;
   width: 100%;
   text-align: center;
+  align-content: center;
 
 }
 
@@ -61,13 +65,8 @@ h2 {
 
 }
 
-.logout {
-  border: 1px solid red;
-  background-color: red;
-  color: white;
-  text-decoration: none;
-  padding: 2px;
-
+.table-secondary {
+  align-content: center;
 }
 
 
@@ -78,6 +77,8 @@ footer {
   text-align: center;
   margin-top: 10px;
   width: 100%;
+  margin-top: auto;
+
 
 }
 
