@@ -3,7 +3,7 @@
         <h2 class="agregarh1">Modificar producto {{modificar.producto}} con ID {{modificar.id}}</h2>
     </div>
     <div class="col">
-        <form action="/admin/administrador/modificar" method="post">
+        <form action="/admin/administrador/modificar" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="{{modificar.id}}" />
 
             <div class="row-3">
@@ -20,6 +20,16 @@
                         <label for="">Precio</label>
                         <input class="form-control" type="number" name="precio" value="{{modificar.precio}}" />
                     </div>
+                </div>
+                <div class="mb-3 row" style="margin-top: 10px;">
+                    <label>
+                        <input type="file" class="form-control" name="imagen" id="imagen" />
+                    </label>
+                </div>
+                <div class="mb-3 row" style="margin-top: 10px;">
+                    <label><input type="checkbox" name="img_delete" id="img_delete" value="1"> ¿Desea eliminar la
+                        imagen?</label>
+                    <input type="hidden" name="img_original" value="{{modificar.img_id}}">
                 </div>
 
             </div>

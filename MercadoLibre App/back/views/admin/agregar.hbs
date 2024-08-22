@@ -3,7 +3,7 @@
     <h2 class="agregarh1">Agregar un nuevo producto</h2>
   </div>
   <div class="col">
-    <form action="/admin/administrador/agregar" method="post">
+    <form action="/admin/administrador/agregar" method="post" enctype="multipart/form-data">
       <div class="row-3">
         <div class="col" style="margin-bottom: 10px;">
           <input class="form-control" type="text" placeholder="Nombre de producto" name="producto" />
@@ -16,7 +16,11 @@
             <input class="form-control" type="number" placeholder="Precio" name="precio" />
           </div>
         </div>
-
+        <div class="mb-3 row" style="margin-top: 10px;">
+          <label>
+            <input type="file" class="form-control" name="imagen" id="imagen" />
+          </label>
+        </div>
       </div>
       <button type="submit" class="btn btn-primary" style="margin: 10px 200px;">Guardar</button>
 

@@ -3,10 +3,11 @@ h2 {
     color: blue;
 }
 
-#parrafo {
+p {
     font-size: 1em;
-    padding: 5px;
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+
 
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import stylenav from "../styles/components/layout/Nav.css";
+import styleNav from "./../styles/components/layout/Nav.css";
 import { Link } from "react-router-dom";
 
 const Nav = (props) => {
@@ -13,7 +13,7 @@ const Nav = (props) => {
           <Link to="/Productos">Productos </Link>
         </li>
         <li><Link to="/Empresa">La Empresa</Link></li>
-        <li><Link>Mi Carrito</Link></li>
+        <li><Link to="/Contacto">Contacto</Link></li>
       </ul>
     </nav>
 

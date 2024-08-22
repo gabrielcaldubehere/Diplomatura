@@ -7,12 +7,6 @@ const Header = (props) => {
     <header className="header">
       <img id="mercadolibreimg" src={mercadolibre} alt="Logo"></img>
       <h1>Mercado Libre</h1>
-      <div className="search">
-        <input id="searchproduct"></input>
-        <button id="search" type="submit">
-          Buscar
-        </button>
-      </div>
     </header>
   );
 };
