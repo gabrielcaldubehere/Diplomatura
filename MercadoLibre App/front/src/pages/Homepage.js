@@ -17,6 +17,7 @@ const Home = (props) => {
     autoplayspeed: 500,
     cssEase: "linear",
     adaptativeHeigth: true,
+
   };
   return (
     <main>

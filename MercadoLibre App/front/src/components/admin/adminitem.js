@@ -1,6 +1,6 @@
 import React from 'react';
 
-const adminitem = (props) => {
+const Adminitem = (props) => {
     const { imagen, producto, precio, body } = props;
 
     return (
@@ -13,4 +13,4 @@ const adminitem = (props) => {
         </div>
     );
 }
-export default adminitem;
+export default Adminitem;

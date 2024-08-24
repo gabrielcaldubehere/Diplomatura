@@ -1,60 +1,36 @@
-* {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1rem;
+section {
+    min-height: 100vh;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
 }
 
-.prod {
-    margin: 25px;
-    display: flex;
+.prod div {
+    display: grid;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-
-}
-
-.cajas {
-    width: 300px;
-    display: inline-block;
-    align-content: space-evenly;
-    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 10px;
     border: 1px solid black;
-    padding: 10px;
-    gap: 3px;
+
 }
 
-.producto {
+.prod img {
+    margin: 10px auto;
     width: 150px;
+    height: 150px;
+
+
 }
 
-#prod2 {
-    width: 200px;
+.prod p {
+
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#prod3 {
-    width: 180px;
-}
-
-#prod4 {
-    width: 175px;
-}
-
-.descripcion {
-    font-size: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin: 10px;
-}
-
-#cantidad {
-    width: 50%;
-    text-align: center;
-    margin: 15px;
-}
-
-#agregar {
-    background-color: blue;
-    color: white;
-    border: 1px solid blue;
+.prod div div {
+    display: none;
 }

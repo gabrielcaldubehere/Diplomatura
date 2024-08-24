@@ -1,8 +1,8 @@
-import styleproductos from "../styles/components/pages/Productos.css";
+import "../styles/components/pages/Productos.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import adminItem from "../components/admin/adminitem";
-import adminitem from "../components/admin/adminitem";
+import Adminitem from "../components/admin/adminitem";
+
 
 
 const Productos = (props) => {
@@ -13,7 +13,7 @@ const Productos = (props) => {
     const cargarProductos = async () => {
       setLoading(true);
 
-      const response = await axios.get('http://localhost:3000/api/administracion');
+      const response = await axios.get('http://localhost:3000/api/administrador');
       setProductos(response.data);
       setLoading(false);
     };
@@ -27,7 +27,7 @@ const Productos = (props) => {
         loading ? (
           <p>Cargando...</p>
         ) : (
-          productos.map(item => <adminitem key={item.id}
+          productos.map(item => <Adminitem key={item.id}
             imagen={item.imagen} producto={item.producto} precio={item.precio}
 
           />)

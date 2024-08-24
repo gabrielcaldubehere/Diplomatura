@@ -16,26 +16,12 @@
     padding-top: 20px;
 }
 
-h1 {
+.header h1 {
     color: blue;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans";
     font-size: 3rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    width: 50%;
-
-}
-
-input {
-    width: 75%;
-    height: 2rem;
 }
